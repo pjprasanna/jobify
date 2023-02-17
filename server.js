@@ -11,7 +11,7 @@ app.get('/',async (req,res)=>{
     res.send('Welcome to my page')
     await model.create({'name':'prasath','rollno':123});
 
-})
+});
 app.use(notFoundMiddleware)
 import errorHandlerMiddleware from './middleware/error-handler.js'
 app.use(errorHandlerMiddleware)
